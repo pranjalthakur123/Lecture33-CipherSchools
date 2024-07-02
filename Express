@@ -1,0 +1,15 @@
+const express = require('express');
+const app=express();
+
+app.get("/",(req,res)=>{
+    res.send("This is a responce");
+    res.end();
+});
+
+app.get("/abc",(req,res)=>{
+    res.send("This is a responce ABC");
+    res.end();
+});
+
+
+app.listen(2020);
